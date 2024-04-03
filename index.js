@@ -69,7 +69,7 @@ app.get("/hash", (req, res) => {
   res.json({ root: getRoot(addresses), addresses: addresses });
 });
 
-app.get("/get/:address", (req, res) => {
+app.get("/wl/get/:address", (req, res) => {
   res.json({ proof: getProof(req.params.address) });
 });
 
